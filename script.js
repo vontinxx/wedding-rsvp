@@ -36,30 +36,29 @@ function findGuest(){
             `
             <div class="guest-card">
 
-            <h3>Welcome, ${data.name}!</h3>
+<div class="divider">🤎</div>
 
-            <p>
-            We have reserved
-            <strong>${data.seats}</strong>
-            seat(s) for you.
-            </p>
+<h3>Welcome, ${data.name}</h3>
 
-            <p>
-            Will you be joining us?
-            </p>
+<p>
+We have reserved
+<strong>${data.seats}</strong>
+seat(s) for you.
+</p>
 
+<p class="question">
+Kindly confirm your attendance.
+</p>
 
-            <button onclick="submitRSVP('Attending')">
-            Yes, We'll Be There
-            </button>
+<button class="yes-btn" onclick="submitRSVP('Attending')">
+✓ We'll Be There
+</button>
 
+<button class="no-btn" onclick="submitRSVP('Declined')">
+Regretfully Decline
+</button>
 
-            <button onclick="submitRSVP('Declined')">
-            Sorry, We Can't Make It
-            </button>
-
-
-            </div>
+</div>
             `;
 
         }
