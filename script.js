@@ -1,4 +1,4 @@
-const scriptURL = "PASTE_YOUR_GOOGLE_SCRIPT_LINK_HERE";
+const scriptURL = "https://script.google.com/macros/s/AKfycbzXCcovs5ZM9YzqMXgckN_vwzTu_FRc9Nd1Reab__COKVJnJf65vv5NomY_PgZfoFlL/exec";
 
 
 function findGuest(){
@@ -49,7 +49,7 @@ document.getElementById("result").innerHTML =
 `
 <p>
 We couldn't find your invitation.
-Please check your spelling or contact Christine & Von (09929561253).
+Please check your spelling or contact Christine & Von.
 </p>
 `;
 
