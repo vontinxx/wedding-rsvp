@@ -29,30 +29,36 @@ body{
 }
 
 
-/* Couple names */
+/* Names */
 h1{
     color:#8B5E3C;
     text-align:center;
-    margin-bottom:5px;
+    margin-bottom:10px;
+    font-family:Georgia, serif;
     font-size:clamp(30px, 6vw, 45px);
 }
 
 
+/* Subtitle */
 .subtitle{
     text-align:center;
     line-height:1.6;
     color:#6B5A4A;
+    margin-bottom:20px;
 }
 
 
+/* Date */
 .date{
     text-align:center;
     margin-bottom:30px;
     font-size:18px;
+    color:#8B5E3C;
+    font-weight:bold;
 }
 
 
-/* RSVP search area */
+/* Search section */
 .search-box{
     display:flex;
     flex-direction:column;
@@ -63,17 +69,20 @@ h1{
 .search-box h2{
     text-align:center;
     color:#8B5E3C;
+    font-family:Georgia, serif;
 }
 
 
+/* Input */
 input{
     padding:15px;
     border-radius:10px;
-    border:1px solid #ccc;
+    border:1px solid #D8C8B5;
     font-size:16px;
 }
 
 
+/* Main button */
 button{
     background:#8B5E3C;
     color:white;
@@ -90,13 +99,82 @@ button:hover{
 }
 
 
+/* Guest RSVP Card */
+
+.guest-card{
+    margin-top:30px;
+    padding:25px;
+    background:#F7F3ED;
+    border-radius:20px;
+    border:1px solid #E4D6C5;
+    text-align:center;
+}
+
+
+.guest-card h3{
+    color:#8B5E3C;
+    font-family:Georgia, serif;
+    font-size:26px;
+    margin-bottom:15px;
+}
+
+
+.guest-card p{
+    color:#4A3B2A;
+    line-height:1.6;
+}
+
+
+.divider{
+    color:#8B5E3C;
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+
+.question{
+    margin-top:20px;
+    font-style:italic;
+}
+
+
+/* RSVP choice buttons */
+
+.yes-btn,
+.no-btn{
+    width:100%;
+    margin-top:12px;
+}
+
+
+.yes-btn{
+    background:#7A8B5A;
+}
+
+
+.yes-btn:hover{
+    background:#657545;
+}
+
+
+.no-btn{
+    background:#8B5E3C;
+}
+
+
+.no-btn:hover{
+    background:#6F472D;
+}
+
+
+/* Result area */
 #result{
     margin-top:30px;
     text-align:center;
 }
 
 
-/* Phone view */
+/* Mobile view */
 @media(max-width:600px){
 
     .container{
@@ -119,6 +197,11 @@ button:hover{
 
     .date{
         font-size:16px;
+    }
+
+
+    .guest-card{
+        padding:20px;
     }
 
 }
