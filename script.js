@@ -1,3 +1,61 @@
-function findGuest() {
-    alert("Guest search is coming next!");
+const scriptURL = "PASTE_YOUR_GOOGLE_SCRIPT_LINK_HERE";
+
+
+function findGuest(){
+
+let name = document
+.getElementById("guestName")
+.value
+.trim();
+
+
+if(name==""){
+document.getElementById("result").innerHTML =
+"Please enter your name.";
+return;
+}
+
+
+fetch(scriptURL + "?name=" + encodeURIComponent(name))
+
+.then(response => response.json())
+
+.then(data => {
+
+
+if(data.found){
+
+document.getElementById("result").innerHTML =
+
+`
+<h3>Welcome, ${data.name}!</h3>
+
+<p>
+We have reserved <strong>${data.seats}</strong>
+seat(s) for you.
+</p>
+
+<button>
+Confirm Attendance
+</button>
+`;
+
+}
+
+else{
+
+document.getElementById("result").innerHTML =
+
+`
+<p>
+We couldn't find your invitation.
+Please check your spelling or contact Christine & Von (09929561253).
+</p>
+`;
+
+}
+
+
+});
+
 }
