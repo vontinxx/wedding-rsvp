@@ -1,0 +1,27 @@
+[
+  {
+    "partyName": "Christine Reyes",
+    "partySize": 2,
+    "guests": [
+      "Christine Reyes",
+      "Von Rendell"
+    ]
+  },
+  {
+    "partyName": "Maria Santos",
+    "partySize": 4,
+    "guests": [
+      "Maria Santos",
+      "Juan Santos",
+      "Sofia Santos",
+      "Liam Santos"
+    ]
+  },
+  {
+    "partyName": "John Cruz",
+    "partySize": 1,
+    "guests": [
+      "John Cruz"
+    ]
+  }
+]
